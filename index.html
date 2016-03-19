@@ -7,13 +7,152 @@
 	</head>
 	
 	<body>
-		<h1 onclick=alert()>Welcome to my wbesite</h1>
-		
-		<p> We're very happy to have you like a visitor </p>
-		<p>Hoping that you'll enjoy</p>
-		
-		<script src="script.js"></script>
-	
+		<ul>
+            <li><a href="#">Searching</a></li>
+            <li><a href="#">Youtube</a></li>
+            <li><a href="#">Card</a></li>
+            <li><a href="#">Play</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Mail</a></li>         
+        </ul>        
+        <ol start="7">
+            <li>Searching</li>
+            <li>Card</li>
+            <li>Market</li>
+            <li>News</li>
+            <li>Dictionaries</li>
+            <li>Pictures</li>
+            <li>Yet
+                <ul>
+                    <li>Flights</li>
+                    <li>Auto</li>
+                    <li>Poster</li>
+                    <li>Blogs</li>
+                </ul>
+            </li>            
+        </ol>
+        <dl>
+            <dt><i>Tags</i></dt>
+            <dd>element of Hypertext Markup Language</dd>
+        </dl>
+        <dl>
+            <dt><i>The semantic web</i></dt>
+            <dd>This direction of the development of the world wide web, the aim of which is to provide information in a form suitable for machine prossessing</dd>
+        </dl>
+        <hr>
+        <p style="text-align:center">CSS Generated  content for pseudo-elements</p>
+        <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <th>IE</th>
+                    <th>Firefox</th>
+                    <th>Chrome</th>
+                    <th>Safari</th>
+                    <th>Opera</th>
+                    <th>iOS</th>
+                    <th>Opera Mini</th>
+                    <th>Android Browser</th>
+                    <th>Chrome for Android</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2"> </td>
+                    <td rowspan="4"> </td>
+                    <td>27</td>
+                    <td rowspan="3"> </td>
+                    <td rowspan="5"> </td>
+                    <td rowspan="4"> </td>
+                    <td rowspan="5"> </td>
+                    <td> </td>
+                    <td rowspan="5"> </td>
+                </tr>
+                 <tr>
+                    <td>31</td>
+                     <td>2.3</td>
+                </tr>
+                 <tr>
+                    <td>8</td>
+                    <td>33</td>
+                     <td>4</td>
+                </tr>
+                 <tr>
+                    <td>9</td>
+                     <td>34</td>
+                     <td>5.1</td>
+                     <td>4.1</td>
+                </tr>
+                 <tr>
+                    <td>10</td>
+                    <td>thirty</td>
+                    <td>35</td>
+                     <td>6.1</td>
+                     <td>6.1</td>
+                     <td>4.3</td>
+                </tr>
+                 <tr>
+                    <td>eleven</td>
+                    <td>31</td>
+                    <td>36</td>
+                    <td>7</td>
+                    <td>23</td>
+                    <td>7.1</td>
+                    <td>7</td>
+                    <td>4.4</td>
+                    <td>36</td>
+                </tr>                 
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="9"> Method of displaying text or images before or after the given element's contents using the: before and: after pseudo-elements</td>
+                </tr>
+            </tfoot>
+        </table>
+        <hr>
+        <form action="http://httpbin.org" method="get">
+            <fieldset>
+                <legend>Personal data</legend>
+                <label>Surname <input type="text" name="surname"/></label><br>
+                <label>First Name <input type="text" name="firstname"/></label><br>
+                <label>Middle name <input type="text" name="middlename"/></label><br>
+                You are <input type="radio" name="sex" value="male"/><input type="radio" name="sex" value="female"/><br>
+                <label>
+                    <select>
+                        <option value="russia">Russia</option>
+                        <option value="congo">Congo</option>
+                        <option value="france">France</option>
+                        <option value="america">USA</option>
+                    </select>
+                </label><br>
+                City <input type="checkbox" name="city" value="ryazan"/>Ryazan<input type="checkbox" name="city" value="moscow">Moscow<br>
+                <label>Photography <input type="file" name="fileup"/></label>
+                <hr>
+                <label>Title
+                    <select name="list" multiple>
+                        <optgroup label="Technologies">
+                            <option value="web">Web Master</option>
+                            <option value="admin">Database Administrator</option>
+                            <option value="design">Computer-aided design</option>
+                        </optgroup>
+                            <optgroup label="Finance">
+                            <option value="plagin">Economic Plagin</option>
+                            <option value="manager">Manager accounting</option>
+                            <option value="planning">Budgeting and planning</option>
+                        </optgroup>
+                    </select>
+                </label><br>
+                <label>Salary <input type="range" name="rang"/></label><br>
+                <textarea placeholder="Tell us about yourselft..." rows="10" cols="50"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Contact Informations</legend>
+                <label>Site <input type="text" name="site"/></label><br>
+                <label>Email <input type="email" name="mail"/></label><br>
+                <label>Phone<input type="tel" name="phone"/></label><br>
+            </fieldset>
+            <label>Password <input type="password" name="pass"/></label><br>
+            <input type="submit"/><input type="reset"/>
+        </form>
 	</body>
 
 </html>
