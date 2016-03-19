@@ -4,15 +4,21 @@
 		<meta charset="utf-8" >
 		<link rel="stylesheet" href="style.css"/>
 		<title>My Website</title>
-	</head>
 	
+	<style>
+        #sear {
+           background-color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+    </head>
 	<body>
-		<h1 onclick=alert()>Welcome to my wbesite</h1>
-		
-		<p> We're very happy to have you like a visitor </p>
-		<p>Hoping that you'll enjoy</p>
-		
-		<script src="script.js"></script>
+		<h1>My Search</h1>
+		<form action="https://yandex.ru/search/" method="get">
+            <label>I want to find<input type="search" value="" name="text"/></label>
+            <input type="submit" id="sear" value="&#128269;"/>
+        </form>
 	
 	</body>
 
