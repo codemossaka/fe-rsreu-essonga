@@ -14,7 +14,7 @@
             }
             .ti{
                 width: 90px;
-                background: url(img/head.jpg) 2px 37px;
+                background: url(../img/head.jpg) 2px 37px;
                 
             }
             .ti a, .tr a:visited{
@@ -57,6 +57,9 @@
             ul{
                 margin-left: -2%;                
             }
+            label{
+                vertical-align: top;
+            }
             table{
                 width: 100%;
             }
@@ -67,11 +70,11 @@
 		<table>
 			<thead>
 				<tr>
-                    <th class="ti"><a href="index.html">Hi-Tech</a></th>
-                    <th><a href="#">Home</a></th>
-                    <th><a href="menu1/page1.html">About Us</a></th>
-                    <th><a href="menu2/page2.html">Pictures</a></th>
-                    <th><a href="menu3/page3.html">Contact</a></th>
+                    <th class="ti"><a href="../index.html">Hi-Tech</a></th>
+                    <th><a href="../index.html">Home</a></th>
+                    <th><a href="../menu1/page1.html">About Us</a></th>
+                    <th><a href="../menu2/page2.html">Pictures</a></th>
+                    <th><a href="#">Contact</a></th>
 				</tr>
 			</thead>
 			<tbody>
@@ -88,7 +91,14 @@
                             </ul>
                         </div>
                         <div class="main">
-                             <h5>Welcome to our website</h5>
+                             <h5>Fill free to contact us</h5>
+                            <form method="get" action="https://httpbin.org">
+                                <label> email: <input type="email" name="mail"></label><br>
+                                <label for="mes">message:</label>
+                                <textarea id="mes"> 
+                                </textarea><br>
+                                <input type="submit"/>
+                            </form>
                         </div>
                     </td>
 				</tr>			
