@@ -2,18 +2,31 @@
 <html>
 	<head>
 		<meta charset="utf-8" >
-		<link rel="stylesheet" href="style.css"/>
-		<title>My Website</title>
+		<title>Main PAge</title>
+        <style>
+            iframe{
+                width: 100%;
+                height: 800px;
+            }
+        </style>
 	</head>
 	
-	<body>
-		<h1 onclick=alert()>Welcome to my wbesite</h1>
-		
-		<p> We're very happy to have you like a visitor </p>
-		<p>Hoping that you'll enjoy</p>
-		
-		<script src="script.js"></script>
-	
+	<body id="top">
+        <p><a href="#bottom">Go to bottom</a></p>
+        <h1>Main file</h1>
+        <ul>
+            <li><a href="task1/index.html" target="myFrame">Task 1</a></li>
+            <li><a href="task2/index.html" target="myFrame">Task 2</a></li>
+            <li><a href="task3/index.html" target="myFrame">Task 3</a></li>
+            <li><a href="task4/index.html" target="myFrame">Task 4</a></li>
+            <li><a href="task5/index.html" target="myFrame">Task 5</a></li>
+            <li><a href="task6/index.html" target="myFrame">Task 6</a></li>
+            <li><a href="task7/index.html" target="myFrame">Task 7</a></li>
+            <li><a href="task8/index.html" target="myFrame">Task 8</a></li>            
+        </ul>
+        
+        <iframe src="http://example.com/" name="myFrame"></iframe>
+	   <p id="bottom"><a href="#top">Go to top</a></p>
 	</body>
 
 </html>
