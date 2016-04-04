@@ -1,0 +1,35 @@
+body{
+    background: gray;
+}
+.main {
+    background: #ffffff none repeat scroll 0 0;
+    border: 1px solid;
+    height: 280px;
+    width: 450px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.head {
+    background-color: #569099;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 14px;
+    width: 440px;
+    color: aliceblue;
+}
+
+
+.foot {
+    background-color: #CAD8D0;
+  //  height: 123px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 440px;
+    word-wrap: break-word;
+}
+h1{
+    font-size: 40px;
+}

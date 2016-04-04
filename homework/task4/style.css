@@ -1,0 +1,107 @@
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background: yellow;
+}
+
+ul{
+    list-style: none;
+}
+
+.nav li{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.nav li:nth-child(1),.nav li:nth-child(2) {
+    border-right: 1px solid red;
+    
+}
+
+.nav li a{
+    text-decoration: none;
+}
+
+.nav li:hover{
+    text-decoration:underline;
+    border-right:0px solid;
+}
+
+#main{
+    background: gray;
+     width: 100%;
+    height: 100vh;
+    margin-top: -14.9px;
+    animation-name: myRotate;
+    animation-iteration-count:10s;
+    animation-duration: 6s;
+    animation-direction: alternate-reverse;
+    position: relative;
+}
+.nav{
+    display: inherit;
+     animation-name: myRotat;
+    animation-iteration-count:10s;
+    animation-duration: 6s;
+    animation-direction: alternate-reverse;
+    position: relative;
+}
+
+@keyframes myRotate {
+  0% {
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top:0;
+    content: none;  
+  }
+    15%{
+    width: 50px;
+    height: 50px;
+    left: 0;
+    top:650px;
+    content: none;  
+    }
+    25%{
+    width: 50px;
+    height: 50px;
+    left: 85%;
+    top:650px;
+    background: red;
+    content: none;  
+    }
+  50% { 
+    height: 50px;
+    width: 50px;
+    left: 85%;
+    top: 0;
+    content: none;  
+  }
+    75% {
+    height: 50px;
+    width: 50px;
+    left: 0;
+    top: 0;
+    content: none;    
+    }
+
+  100% { 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    content: none;  
+  }
+}
+
+@keyframes myRotat {
+  0% {
+    visibility: hidden;
+  }
+
+  100% { 
+    visibility: hidden;  
+  }
+}

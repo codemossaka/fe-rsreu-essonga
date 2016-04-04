@@ -1,0 +1,57 @@
+body{
+    background: gray;
+}
+#main{
+    width: 360px;
+    height: 260px;
+    border: 1px inset #CCCCCC;
+    background: white;
+}
+
+.square{
+    width: 350px;
+    height: 250px;
+    margin-top: 3px;
+    border: 2px solid #CCCCCC;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+.circle{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;;
+    background: rgba(98,125,77,1);
+    background: -moz-linear-gradient(left, rgba(98,125,77,1) 0%, rgba(0,188,158,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(98,125,77,1)), color-stop(100%, rgba(0,188,158,1)));
+    background: -webkit-linear-gradient(left, rgba(98,125,77,1) 0%, rgba(0,188,158,1) 100%);
+    background: -o-linear-gradient(left, rgba(98,125,77,1) 0%, rgba(0,188,158,1) 100%);
+    background: -ms-linear-gradient(left, rgba(98,125,77,1) 0%, rgba(0,188,158,1) 100%);
+    background: linear-gradient(to right, rgba(98,125,77,1) 0%, rgba(0,188,158,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#627d4d', endColorstr='#00bc9e', GradientType=1 );
+    animation-name: myRotate;
+    animation-iteration-count:infinite;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+    position: relative;
+}
+
+@keyframes myRotate {
+    0% {
+        margin-top: 0;
+    }
+    
+    50% { 
+        margin-top: 100px;
+    }
+    
+    100% {
+        margin-top: 0;
+    }
+    
+}

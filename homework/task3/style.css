@@ -1,0 +1,13 @@
+
+p{
+    background: #CAD8D0;
+    padding: 5px;
+}
+@media all and (max-width:500px) {
+
+    #main{
+        width: 200px;
+    }
+
+
+}
