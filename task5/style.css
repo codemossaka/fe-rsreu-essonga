@@ -1,0 +1,103 @@
+:root {
+    font-size: 10px;
+}
+.menu {
+    background: #044e8c url("bg.png") no-repeat;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+}
+.menu-items-left {
+    float: left;
+}
+.menu-items-right {
+    float: right;
+}
+.menu-items-container {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.menu-item {
+    background: red;
+    margin-right: 0.2rem;
+    float: left;
+}
+.menu-item:last-child {
+    margin-right: 0;
+}
+.menu-item:hover {
+    cursor: pointer;
+    background-color: rgb(224, 56, 56);
+}
+.menu-caption {
+    vertical-align: middle;
+    font-size: 1.6rem;
+    padding: 0 1rem 0 2.5rem;
+    text-decoration: none;
+}
+.text-hide {
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+    padding: 0;
+}
+[data-label].menu-item:after {
+    content: attr(data-label);
+    color: #ffffff;
+    background-color: rgba(255, 35, 35, 0.94);
+    border-radius: 50%;
+    position: relative;
+    vertical-align: middle;
+    padding: 0.4rem 0.7rem;
+    left: -1.2rem;
+}
+
+/*------------------- ICONS --------------------------------*/
+
+.ico {
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    min-width: 3.5rem;
+    min-height: 3.5rem;
+    vertical-align: middle;
+}
+.ico-message {
+    background-image: url("icons/mail.png");
+}
+.ico-report {
+    background-image: url("icons/page.png");
+}
+.ico-notification {
+    background-image: url("icons/user.png");
+}
+.ico-special {
+    background-image: url("icons/flag.png");
+}
+.ico-performed {
+    background-image: url("icons/checked.png");
+}
+.ico-refresh {
+    background-image: url("icons/refresh.png");
+}
+.ico-widgets {
+    background-image: url("icons/widget.png");
+}
+.ico-exit {
+    background-image: url("icons/exit.png");
+}
+.light-blue {
+    background-color: rgba(70, 134, 187, 0.77);
+    color: #000000;
+}
+.dark {
+    background-color: #2f2f35;
+    color: #ffffff;
+}
+.dark:hover {
+    background-color: #2f2f35;
+}
+.on-text-underline:hover {
+    text-decoration: underline;
+}
